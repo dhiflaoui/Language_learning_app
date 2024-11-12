@@ -1,2 +1,4 @@
-# Language-_learning_app
-Language learning app using react
+# Language_learning_app
+
+Language learning app using
+Nextjs 14, shadcn ui
