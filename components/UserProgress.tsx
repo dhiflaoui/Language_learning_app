@@ -2,9 +2,10 @@ import { InfinityIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import NextLink from "next/link";
+import { courses } from "@/db/schema";
 
 type Props = {
-  activeCourse: { imageSrc: string; title: string };
+  activeCourse: typeof courses.$inferSelect;
   hearts: number;
   points: number;
   hasActiveSubs: boolean;
@@ -22,7 +23,7 @@ export default function UserProgress({
           <div>
             <Image
               src={activeCourse.imageSrc}
-              alt={activeCourse.title}
+              alt={activeCourse.name}
               width={32}
               height={32}
             />
